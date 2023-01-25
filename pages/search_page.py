@@ -2,6 +2,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from pages.base_page import BasePage
 from data.locators import SearchPageLocators
 from selenium.webdriver.support.ui import Select
+from selenium.webdriver.common.by import By
 import time
 
 
@@ -23,16 +24,14 @@ class SearchPage(BasePage):
         
         # Click on search button with locator SEARCH_BUTTON
   
-        # wait until element with locator SEARCH_BUTTON is present
+        # wait until element with locator RESULTS is present
         pass
 
 
     def select_option_dropdown(self, search_option):
-        # Send value to SEARCH_INPUT
+        # Find element with locator SEARCH_INPUT and send 'search_option' string
 
-        # wait until element with locator SEARCH_DROPDOWN_OPTIONS is present
+        # Wait until element with locator SEARCH_DROPDOWN_OPTIONS is present
 
-        # Find dropdown element SEARCH_DROPDOWN_OPTIONS
-
-        # To complete how to click on <a> link element using href.
+        # Select first option from dropdown and click it
         pass
